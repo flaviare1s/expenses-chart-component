@@ -15,30 +15,36 @@
   <title>Frontend Mentor | Expenses chart component</title>
 
 </head>
-<body class="font-dm">
+<body class="font-dm bg-cream flex flex-col justify-center items-center h-screen m-auto gap-4 sm:gap-6">
 
-  My balance
-  $921.48
+  <section class="w-[95%] sm:w-[70%] md:w-[50%] lg:w-[40%] bg-soft_red flex justify-between items-centern p-5 sm:p-8 rounded-[10px]">
+    <div>
+      <p class="text-white text-[15px] sm:text-lg">My balance</p>
+      <p class="text-white font-bold text-2xl sm:text-[32px]">$921.48</p>
+    </div>
+    <div>
+      <img class="h-10 sm:h-12" src="../images/logo.svg" alt="Logo">
+    </div>
+  </section>
 
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
+  <section class="w-[95%] sm:w-[70%] md:w-[60%] lg:w-[40%] bg-white px-5 sm:px-10 rounded-[10px]">
+    <h1 class="text-dark_brown font-bold text-2xl sm:text-[32px] pt-6 sm:pt-8">Spending - Last 7 days</h1>
+    mon
+    tue
+    wed
+    thu
+    fri
+    sat
+    sun
+    Total this month
+    $478.33
+    +2.4%
+    from last month
+  </section>
   
-  <div class="text-xs text-center">
+  <footer class="text-xs text-center">
     Challenge by <a class="text-soft_red font-bold" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a class="text-soft_red font-bold" href="https://github.com/flaviare1s/">Flávia Reis</a>.
-  </div>
+  </footer>
 </body>
 </html>
