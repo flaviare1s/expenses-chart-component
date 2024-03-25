@@ -1,7 +1,14 @@
 const ctx = document.getElementById('columnChart')
+const total = document.getElementById('total')
 
 let labelsX = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun']
 let values = [17.45, 34.91, 52.36, 31.07, 23.39, 43.28, 25.48]
+
+let totalValue = values.reduce((acc, value) => {
+    return acc + value
+})
+
+total.innerText = totalValue
 
   new Chart(ctx, {
     type: 'bar',
@@ -12,6 +19,7 @@ let values = [17.45, 34.91, 52.36, 31.07, 23.39, 43.28, 25.48]
         data: values,
         borderWidth: 0,
         backgroundColor: 'hsl(10, 79%, 65%)',
+        hoverBackgroundColor: '#FF9B86',
         borderRadius: 5,
         barPercentage: 1,
       }],
@@ -47,3 +55,4 @@ let values = [17.45, 34.91, 52.36, 31.07, 23.39, 43.28, 25.48]
       },
     },
   })
+
