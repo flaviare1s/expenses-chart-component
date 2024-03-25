@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
   <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
 
   <link rel="stylesheet" href="output.css">
@@ -29,6 +31,8 @@
 
   <main class="w-[95%] sm:w-[540px] bg-white px-5 sm:px-10 rounded-[10px]">
     <h1 class="text-dark_brown font-bold text-2xl sm:text-[32px] pt-6 sm:pt-8 mb-[52px] sm:mb-[66px]">Spending - Last 7 days</h1>
+
+    <canvas id="columnChart"></canvas>
     
     <div class="flex justify-between border-b-2 border-b-cream pb-6 sm:pb-8">
       <div class="text-medium_brown text-center text-[15px]">mon</div>
