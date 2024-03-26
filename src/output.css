@@ -691,6 +691,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-very_pale_orange {
+  --tw-text-opacity: 1;
+  color: hsl(33 100% 98% / var(--tw-text-opacity));
+}
+
 @media (min-width: 640px) {
   .sm\:mb-\[66px\] {
     margin-bottom: 66px;
