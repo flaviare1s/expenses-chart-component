@@ -1,5 +1,4 @@
 const ctx = document.getElementById('columnChart')
-const total = document.getElementById('total')
 
 const fetchChartData = async () => {
     try {
@@ -21,9 +20,6 @@ const updateChart = async () => {
 
     const labelsX = data.map(entry => entry.day)
     const values = data.map(entry => entry.amount)
-
-    const totalValue = values.reduce((acc, value) => acc + value, 0)
-    total.innerText = totalValue.toFixed(2)
 
     const currentDate = new Date();
     const currentDay = currentDate.getDay()
