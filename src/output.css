@@ -600,6 +600,23 @@ video {
   border-radius: 10px;
 }
 
+.border {
+  border-width: 1px;
+}
+
+.border-t {
+  border-top-width: 1px;
+}
+
+.border-t-2 {
+  border-top-width: 2px;
+}
+
+.border-cream {
+  --tw-border-opacity: 1;
+  border-color: hsl(27 66% 92% / var(--tw-border-opacity));
+}
+
 .bg-cream {
   --tw-bg-opacity: 1;
   background-color: hsl(27 66% 92% / var(--tw-bg-opacity));
