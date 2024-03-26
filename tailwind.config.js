@@ -13,6 +13,7 @@ module.exports = {
         medium_brown: 'hsl(28, 10%, 53%)',
         cream: 'hsl(27, 66%, 92%)',
         very_pale_orange: 'hsl(33, 100%, 98%)',
+        card_white: '#FFFBF6',
       },
     },
   },
