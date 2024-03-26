@@ -6,9 +6,34 @@ let values = [17.45, 34.91, 52.36, 31.07, 23.39, 43.28, 25.48]
 
 let totalValue = values.reduce((acc, value) => {
     return acc + value
-})
-
+},0)
 total.innerText = totalValue
+
+const currentDate = new Date()
+const currentDay = currentDate.getDay()
+
+const backgroundColors = [
+    'hsl(10, 79%, 65%)', // Monday
+    'hsl(10, 79%, 65%)', // Tuesday
+    'hsl(10, 79%, 65%)', // Wednesday
+    'hsl(10, 79%, 65%)', // Thursday
+    'hsl(10, 79%, 65%)', // Friday
+    'hsl(10, 79%, 65%)', // Saturday
+    'hsl(10, 79%, 65%)' // Sunday
+]
+backgroundColors[currentDay - 1] = 'hsl(186, 34%, 60%)'
+
+const hoverBackgroundColors = [
+    '#FF9B86',
+    '#FF9B86',
+    '#FF9B86',
+    '#FF9B86',
+    '#FF9B86',
+    '#FF9B86',
+    '#FF9B86',
+]
+hoverBackgroundColors[currentDay - 1] = '#B4E0E5'
+
 
   new Chart(ctx, {
     type: 'bar',
@@ -18,8 +43,8 @@ total.innerText = totalValue
         label: '',
         data: values,
         borderWidth: 0,
-        backgroundColor: 'hsl(10, 79%, 65%)',
-        hoverBackgroundColor: '#FF9B86',
+        backgroundColor: backgroundColors,
+        hoverBackgroundColor: hoverBackgroundColors,
         borderRadius: 5,
         barPercentage: 1,
       }],
