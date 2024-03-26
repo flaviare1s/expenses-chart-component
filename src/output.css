@@ -610,14 +610,9 @@ video {
   background-color: hsl(10 79% 65% / var(--tw-bg-opacity));
 }
 
-.bg-white {
+.bg-very_pale_orange {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-card_white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 251 246 / var(--tw-bg-opacity));
+  background-color: hsl(33 100% 98% / var(--tw-bg-opacity));
 }
 
 .p-5 {
