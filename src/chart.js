@@ -77,6 +77,28 @@ hoverBackgroundColors[currentDay - 1] = '#B4E0E5'
         legend: {
             display: false,
         },
+        tooltip: {
+            backgroundColor: 'hsl(25, 47%, 15%)',
+            displayColors: false,
+            cornerRadius: 5,
+            callbacks: {
+                title: function () {
+                    return ''
+                },
+                label: function (context) {
+                    let label = context.dataset.label || ''
+                    if (label) {
+                        label += ': '
+                    }
+                    label += "$" + context.formattedValue
+                    return label
+                },
+            },
+            bodyFont: {
+                size: 18,
+                family: 'DM Sans',
+            },
+        },
       },
     },
   })
